@@ -3,8 +3,8 @@
 #include <iostream>
 #include <sqlite3.h>
 
-#define TABLE_NAME 			"users"
-#define DATABASE_FILENAME 	"database.db"
+#define TABLE_NAME "users"
+#define DATABASE_FILENAME "database.db"
 
 using namespace std;
 
