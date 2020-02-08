@@ -45,7 +45,7 @@ object Main {
 		def getName(): String = name
 
 		def getAge(): Int = age
-
+		
 	}
 
 }
