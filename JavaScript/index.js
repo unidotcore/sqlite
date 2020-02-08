@@ -1,5 +1,5 @@
 const sqlite3 = require('sqlite3');
-const sprintf = require('sprintf-js').sprintf
+const sprintf = require('sprintf-js').sprintf;
 
 const TABLE_NAME = 'users';
 const DATABASE_FILENAME = 'database.db';

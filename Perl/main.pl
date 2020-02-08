@@ -28,9 +28,9 @@ $statement_handle->execute() or die "Unable to execute query.\n";
 my @users = ();
 while (my @row = $statement_handle->fetchrow_array()) {
     my $user = User->new();
-    $user->id($row[0]);
-    $user->name($row[1]);
-    $user->age($row[2]);
+    $user->id(@row[0]);
+    $user->name(@row[1]);
+    $user->age(@row[2]);
     push(@users, $user);
 }
 
