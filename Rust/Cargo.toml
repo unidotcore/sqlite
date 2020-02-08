@@ -1,0 +1,7 @@
+[package]
+name = "database"
+version = "1.0.0"
+authors = ["UniDotCore"]
+
+[dependencies]
+rusqlite = "0.21.0"
