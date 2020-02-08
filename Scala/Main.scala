@@ -38,7 +38,7 @@ object Main {
 		connection.close
     }
 
-    class User(private val id: Int, private val name: String, private val age: Int) {
+	class User(private val id: Int, private val name: String, private val age: Int) {
 
 		def getId(): Int = id
 
