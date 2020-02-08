@@ -1,0 +1,10 @@
+{
+    "name": "database",
+    "version": "1.0.0",
+    "author": "UniDotCore",
+    "license": "MIT",
+    "dependencies": {
+        "sprintf-js": "1.1.2",
+        "sqlite3": "4.1.1"
+    }
+}
