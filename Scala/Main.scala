@@ -6,11 +6,11 @@ import java.sql.{DriverManager, Connection, Statement}
 
 object Main {
 
-    val TableName: String = "users"
-    val DatabaseFilename: String = "database.db"
+	val TableName: String = "users"
+	val DatabaseFilename: String = "database.db"
 
-    def main(args: Array[String]): Unit = {
-        Class.forName("org.sqlite.JDBC")
+	def main(args: Array[String]): Unit = {
+		Class.forName("org.sqlite.JDBC")
 		val databaseURL: String = String.format("jdbc:sqlite:%s", DatabaseFilename)
 		val connection: Connection = Try(DriverManager.getConnection(databaseURL)) match {
 			case Success(connection) => connection
@@ -36,7 +36,7 @@ object Main {
 			case Failure(_) => println("Unable to execute query.")
 		}
 		connection.close
-    }
+	}
 
 	class User(private val id: Int, private val name: String, private val age: Int) {
 
